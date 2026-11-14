@@ -1,0 +1,13 @@
+# Sensitive files & tokens
+.npmrc
+.env
+.env.*
+*.log
+
+# Node & package caches
+node_modules/
+.npm/
+
+# OS files
+.DS_Store
+Thumbs.db
