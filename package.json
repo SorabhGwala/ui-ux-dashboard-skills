@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "node bin/cli.js",
-    "list": "node bin/cli.js --list"
+    "list": "node bin/cli.js --list",
+    "test": "node scripts/validate-skills.js"
   },
   "repository": {
     "type": "git",

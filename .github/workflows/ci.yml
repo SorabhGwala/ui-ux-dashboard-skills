@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+    branches: ["main", "master"]
+
+jobs:
+  validate:
+    name: Validate Skills & CLI (${{ matrix.os }}, Node ${{ matrix.node-version }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node-version: [18.x, 20.x, 22.x]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Validate Agent Skills Specification
+        run: node scripts/validate-skills.js
+
+      - name: Test CLI Runner Help & List
+        run: |
+          node bin/cli.js --help
+          node bin/cli.js --list
+
+      - name: Test CLI Installation (POSIX)
+        if: runner.os != 'Windows'
+        run: |
+          mkdir -p /tmp/test-project
+          node bin/cli.js --target /tmp/test-project --agent all
+          test -f /tmp/test-project/AGENTS.md
+          test -f /tmp/test-project/CLAUDE.md
+          test -d /tmp/test-project/.claude/skills/dashboard-design
+          test -d /tmp/test-project/.gemini/skills/ui-design-taste
+          test -f /tmp/test-project/.cursor/rules/ui-ux-design-suite.mdc
+          test -f /tmp/test-project/.github/copilot-instructions.md
+
+      - name: Test CLI Installation (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $testDir = Join-Path $env:TEMP "ci_test_project"
+          if (Test-Path $testDir) { Remove-Item -Recurse -Force $testDir }
+          node bin/cli.js --target $testDir --agent all
+          if (-not (Test-Path (Join-Path $testDir "AGENTS.md"))) { throw "AGENTS.md missing" }
+          if (-not (Test-Path (Join-Path $testDir "CLAUDE.md"))) { throw "CLAUDE.md missing" }
+          if (-not (Test-Path (Join-Path $testDir ".claude/skills/dashboard-design"))) { throw "Claude skill missing" }
+          if (-not (Test-Path (Join-Path $testDir ".gemini/skills/ui-design-taste"))) { throw "Gemini skill missing" }
+          if (-not (Test-Path (Join-Path $testDir ".cursor/rules/ui-ux-design-suite.mdc"))) { throw "Cursor rule missing" }
+          if (-not (Test-Path (Join-Path $testDir ".github/copilot-instructions.md"))) { throw "Copilot instructions missing" }

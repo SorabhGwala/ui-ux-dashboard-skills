@@ -1,5 +1,11 @@
 # 🎨 Universal UI/UX & Dashboard Design Skills Suite
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](CHANGELOG.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Node >= 18](https://img.shields.io/badge/node-%3E%3D18.0.0-orange.svg)](package.json)
+[![Standard: Agent Skills](https://img.shields.io/badge/standard-agentskills.io-purple.svg)](https://agentskills.io)
+
 > **Production-grade design director intelligence, anti-slop guidelines, honest dashboard engineering, and accessible web standards for AI coding agents.**
 
 This repository contains a modular collection of specialized **Agent Skills** conforming to the open [Agent Skills specification](https://agentskills.io). When loaded into an AI coding assistant (such as **Google Antigravity**, **Claude Code**, **Cursor**, **GitHub Copilot**, **OpenAI Codex**, or **Windsurf**), it equips the agent with the taste, heuristics, and execution standards of an executive design director and senior frontend engineer.

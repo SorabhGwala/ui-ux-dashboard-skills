@@ -1,0 +1,46 @@
+name: "🐛 Bug Report"
+description: "File a bug report or report an AI design smell / guideline inconsistency"
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description of the Bug / Design Smell"
+      description: "A clear and concise description of what went wrong or what guideline was violated."
+      placeholder: "e.g. The KPI component displays an extreme negative percentage on a count of 1..."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Reproduction Steps / Prompt Used"
+      description: "What prompt did you pass to your AI coding agent, or what command did you run?"
+      placeholder: "1. Run npx @sorabhgwala/ui-ux-dashboard-skills\n2. Ask agent to 'create a churn card'\n3. See card color inverted..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Behavior"
+      description: "What should the UI or agent output have looked like?"
+    validations:
+      required: true
+  - type: dropdown
+    id: agent
+    attributes:
+      label: "Affected Agent / Environment"
+      options:
+        - "Claude Code"
+        - "Google Antigravity / Gemini CLI"
+        - "Cursor"
+        - "GitHub Copilot"
+        - "Codex / Windsurf"
+        - "Direct NPX CLI Runner"
+        - "Other"
+    validations:
+      required: true

@@ -1,0 +1,35 @@
+name: "✨ Feature / Skill Request"
+description: "Suggest a new design guideline, component snippet, or agent skill"
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest an addition to elevate AI frontend engineering standards!
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem or Gap"
+      description: "What UI/UX design scenario is currently underserved by existing skills?"
+      placeholder: "e.g. AI agents struggle to build accessible complex tree-view controls..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed Solution / Guidelines"
+      description: "Describe the rules, guidelines, or component pattern you'd like added."
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: "Target Surface Mode"
+      options:
+        - "Persuade (Marketing / Landing Page)"
+        - "Operate (Dashboard / SaaS / App UI)"
+        - "Read (Documentation / Articles)"
+        - "Experience (Showcase / Creative)"
+    validations:
+      required: true
