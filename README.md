@@ -61,8 +61,19 @@ ui-ux-dashboard-skills/
 
 ## 🚀 How to Use in Any Project
 
-### Method 1: Automatic Setup Script (Recommended)
-You can link or copy this entire suite into any project repository in one command:
+### Method 1: NPX Direct Runner (Recommended — Universal)
+Run directly via NPX without needing any pre-installation or shell scripts:
+
+```bash
+# Install into current project for all agents (Claude, Antigravity, Cursor, Copilot)
+npx @sorabhgwala/ui-ux-dashboard-skills
+
+# Or specify a target directory and agent
+npx @sorabhgwala/ui-ux-dashboard-skills --target ./my-app --agent cursor
+```
+
+### Method 2: Local Setup Scripts (PowerShell / Bash)
+If working directly from this cloned repository:
 
 **On Windows (PowerShell):**
 ```powershell

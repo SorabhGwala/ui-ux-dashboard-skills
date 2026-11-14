@@ -1,0 +1,53 @@
+{
+  "name": "@sorabhgwala/ui-ux-dashboard-skills",
+  "version": "1.0.0",
+  "description": "Universal UI/UX, Anti-Slop, and Dashboard Design skills suite for AI coding agents (Antigravity, Claude Code, Cursor, GitHub Copilot, Codex, Windsurf).",
+  "main": "bin/cli.js",
+  "bin": {
+    "ui-ux-skills": "./bin/cli.js",
+    "ui-ux-dashboard-skills": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "list": "node bin/cli.js --list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorabhgwala/ui-ux-dashboard-skills.git"
+  },
+  "keywords": [
+    "agent-skills",
+    "antigravity",
+    "claude-code",
+    "cursor",
+    "copilot",
+    "windsurf",
+    "codex",
+    "ui-ux",
+    "dashboard-design",
+    "anti-slop",
+    "design-tokens",
+    "web-interface-guidelines",
+    "accessibility",
+    "wcag",
+    "design-systems"
+  ],
+  "author": "Sorabh Gwala (@sorabhgwala)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sorabhgwala/ui-ux-dashboard-skills/issues"
+  },
+  "homepage": "https://github.com/sorabhgwala/ui-ux-dashboard-skills#readme",
+  "files": [
+    "bin",
+    "skills",
+    "snippets",
+    "AGENTS.md",
+    "README.md",
+    "setup.ps1",
+    "setup.sh"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
