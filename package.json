@@ -4,8 +4,8 @@
   "description": "Universal UI/UX, Anti-Slop, and Dashboard Design skills suite for AI coding agents (Antigravity, Claude Code, Cursor, GitHub Copilot, Codex, Windsurf).",
   "main": "bin/cli.js",
   "bin": {
-    "ui-ux-skills": "./bin/cli.js",
-    "ui-ux-dashboard-skills": "./bin/cli.js"
+    "ui-ux-skills": "bin/cli.js",
+    "ui-ux-dashboard-skills": "bin/cli.js"
   },
   "scripts": {
     "start": "node bin/cli.js",
