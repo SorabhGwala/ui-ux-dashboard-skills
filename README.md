@@ -48,6 +48,9 @@ ui-ux-dashboard-skills/
 │   │   ├── SKILL.md
 │   │   └── presets/                   # Linear Dark, Vercel Clean, Stripe, Warm Editorial
 │   │
+│   ├── apple-design/                  # Apple fluid interfaces, spring physics & WWDC motion
+│   │   └── SKILL.md
+│   │
 │   └── ui-audit-critique/             # Heuristic critique, audit & pre-ship QA passes
 │       ├── SKILL.md
 │       └── references/                # Critique scoring rubric & pre-commit checklist
@@ -113,7 +116,7 @@ Skills are linked to `<project>/.gemini/skills/` or `<project>/.agent/skills/` a
 
 ---
 
-## 📚 The 5 Core Skills at a Glance
+## 📚 The 6 Core Skills at a Glance
 
 ### 1. `ui-design-taste`
 * Enforces the 4 surface modes: **Persuade** (marketing/landing), **Operate** (dashboards/tools), **Read** (docs), and **Experience** (showcases).
@@ -139,7 +142,12 @@ Skills are linked to `<project>/.gemini/skills/` or `<project>/.agent/skills/` a
   - **Stripe Enterprise:** Accessible, clean light mode with soft elevations.
   - **Warm Editorial:** Magazine aesthetic with warm cream canvas (`#f7f7f4`).
 
-### 5. `ui-audit-critique`
+### 5. `apple-design`
+* Apple's philosophy of fluid interfaces, physical motion, and direct manipulation translated for the web.
+* **Spring physics & interruptibility:** Motion starts from current on-screen position, inherits gesture velocity, and can be reversed at any point mid-flight.
+* **Direct 1:1 manipulation & rubber-banding:** Soft boundaries, velocity handoff on drag release, sheets, drawers, translucent materials, and Apple typography scales.
+
+### 6. `ui-audit-critique`
 * Design critique rubric: *Honesty → Salience → Hierarchy → Typography & Spacing → Component Smells → Polish*.
 * Pre-ship multi-resolution inspection: 1440px, 1024px, 768px, and 390px passes.
 

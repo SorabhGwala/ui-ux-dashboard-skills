@@ -1,6 +1,6 @@
 {
   "name": "@sorabhgwala/ui-ux-dashboard-skills",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Universal UI/UX, Anti-Slop, and Dashboard Design skills suite for AI coding agents (Antigravity, Claude Code, Cursor, GitHub Copilot, Codex, Windsurf).",
   "main": "bin/cli.js",
   "bin": {

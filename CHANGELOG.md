@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2026-11-15
+
+### Added
+- **`apple-design` Skill (`skills/apple-design/`):**
+  - Integrated Emil Kowalski's Apple Design skill distilled from WWDC design talks (*Designing Fluid Interfaces*).
+  - Enforces fluid physical motion, spring physics, velocity handoff, direct 1:1 manipulation, rubber-banding, and interruptible transitions.
+  - Covers translucent materials, depth hierarchy, optical sizing, tracking, and Apple typography scales.
+- Updated `AGENTS.md` intent routing matrix to route Apple design and gesture prompts to `skills/apple-design/`.
+- Updated `README.md` and `ARCHITECTURE.md` with the 6th core skill.
+
+---
+
 ## [1.0.0] - 2026-11-14
 
 ### Added
