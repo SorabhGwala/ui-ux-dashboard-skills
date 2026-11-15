@@ -51,6 +51,10 @@ ui-ux-dashboard-skills/
 │   ├── apple-design/                  # Apple fluid interfaces, spring physics & WWDC motion
 │   │   └── SKILL.md
 │   │
+│   ├── unslop/                        # Damir Sokolovsky's 9-pass anti-slop redline pass
+│   │   ├── SKILL.md
+│   │   └── references/                # Signs of slop, token ramps, visuals, effects, RTL
+│   │
 │   └── ui-audit-critique/             # Heuristic critique, audit & pre-ship QA passes
 │       ├── SKILL.md
 │       └── references/                # Critique scoring rubric & pre-commit checklist
@@ -116,7 +120,7 @@ Skills are linked to `<project>/.gemini/skills/` or `<project>/.agent/skills/` a
 
 ---
 
-## 📚 The 6 Core Skills at a Glance
+## 📚 The 7 Core Skills at a Glance
 
 ### 1. `ui-design-taste`
 * Enforces the 4 surface modes: **Persuade** (marketing/landing), **Operate** (dashboards/tools), **Read** (docs), and **Experience** (showcases).
@@ -147,7 +151,12 @@ Skills are linked to `<project>/.gemini/skills/` or `<project>/.agent/skills/` a
 * **Spring physics & interruptibility:** Motion starts from current on-screen position, inherits gesture velocity, and can be reversed at any point mid-flight.
 * **Direct 1:1 manipulation & rubber-banding:** Soft boundaries, velocity handoff on drag release, sheets, drawers, translucent materials, and Apple typography scales.
 
-### 6. `ui-audit-critique`
+### 6. `unslop`
+* Damir Sokolovsky's authoritative framework for unslopping vibecoded, AI-looking interfaces.
+* **The 9 Passes in Strict Order:** Spacing (4px grid) → Color (1 neutral ramp + quiet chrome) → Icons (unified stroke, zero emojis in labels) → Copy (no hype words/periods on titles) → Type (sentence case, 400/500 weights) → Layout (app proportions, scene heroes) → Details (nested radius rule) → Visuals (1 bright element, real materials) → Motion (calm physics).
+* **Comprehensive Signs Checklist:** Detects and cures purple gradient blobs, glowing pills, unstyled emojis, mixed numeral formats, and generic AI template structures.
+
+### 7. `ui-audit-critique`
 * Design critique rubric: *Honesty → Salience → Hierarchy → Typography & Spacing → Component Smells → Polish*.
 * Pre-ship multi-resolution inspection: 1440px, 1024px, 768px, and 390px passes.
 

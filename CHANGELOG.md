@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.0] - 2026-11-15
+
+### Added
+- **`unslop` Skill (`skills/unslop/`):**
+  - Integrated Damir Sokolovsky's (`@heydamir`) industry-standard Unslopping system for AI coding agents.
+  - Implements the strict 9-pass redline workflow: Spacing (4px scale) → Color (1 neutral ramp, quiet chrome) → Icons (unified stroke, zero emoji labels) → Copy (no hype words, specific baselines) → Type (sentence case, 400/500 weights) → Layout (app proportions, scene heroes) → Details (nested radius rule) → Visuals (1 bright element, real materials) → Motion (restrained curves).
+  - Included complete reference guides: `signs.md` (audit checklist of AI slop tells), `tokens.md` (neutral ramps & scales), `visuals.md` (hero compositions & prompt formulas), `effects.md` (glyph drawing & code effects), `rtl.md` (Arabic/Hebrew/Persian rules), and `refs.md`.
+- Updated `AGENTS.md`, `README.md`, and `ARCHITECTURE.md` to establish the 7 core skills suite.
+
+---
+
 ## [1.1.0] - 2026-11-15
 
 ### Added

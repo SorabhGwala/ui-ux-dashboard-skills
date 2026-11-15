@@ -74,6 +74,7 @@ ui-ux-dashboard-skills/
 │   ├── web-interface-guidelines/ # WCAG accessibility, focus, and form ergonomics
 │   ├── design-tokens-system/  # DESIGN.md token parser and 4 brand presets
 │   ├── apple-design/          # Apple fluid interfaces, spring physics & WWDC motion
+│   ├── unslop/                # Damir Sokolovsky's 9-pass anti-slop redline system
 │   └── ui-audit-critique/     # Critique rubrics and pre-ship verification passes
 │
 └── snippets/                  # Battle-tested React + Tailwind component patterns
